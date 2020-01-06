@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="targetTest3002" size="0.100000 0.100000" />
+    <ImageTarget name="targetTest3000" size="0.090000 0.026267" />
+    <ImageTarget name="Target_MM_Group2" size="0.368300 0.249250" />
+    <ImageTarget name="Target_MM_Cover" size="0.200000 0.242772" />
+    <ImageTarget name="Target_MM_Group" size="0.368300 0.205419" />
+  </Tracking>
+</QCARConfig>

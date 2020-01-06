@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: VuforiaConfiguration
+  m_EditorClassIdentifier: 
+  vuforia:
+    vuforiaLicenseKey: AZO56PX/////AAAACHJ6ytRX6053md15kGZAlmYQoP4y4cgSNbXt/TDzw4/meXmKAYyPHs3l9cqTewCpjhDxYgxiPWBx9RSURCizlE022lssnM7+KubUe3PgE3VuFdIq5UqUJM6fSl4FALq0lcx6aS3P5Wenogpu579190fNjoZmmswyHwd5bI+MEIpmPtYhBK5xaIheN/+skT96pXJT4FoQeXG2CHA9nmjQwoLEeintAkAVxgOVmmvFEq5MeofHAEMVhYzNzjtnHiuWO10aOf2pDKu0hOQ97cEtGI1shSFMnlPfNSiYoLt0a8oy4yj+q5bNUz4szCWKdA4NcmdWtBLcfhbasLuJpp67acm1NaHRaF9SGc+1Uvl6stOy
+    ufoLicenseKey: QVhtdTBuai8vLy8vQUFBQUtQUWgrRDBtUzAyTXNRU0NzdEY2MzBTRFNxdGpMR3d5Q1FsNGtDcit0b3NsdUdEWE1Yamd4bnAxYUNQaHVDYkErNEU0aDBuR0RjWS9wYVloR0JUZk1KQmZ5cWNTNHUvSE9TeWk3SC91V0J4Qm44Vnk0WXkvWkFXWG9wN1NFaEUrek1HQTRubjJnWU94b2gyeVVoaU1mWGNIZDJvNUZhV3BRTjVjdVU1RTBQQnYva29VMndBblI2RldZWDMzeGRaTTYveXU5M2VKeTJYZnk1bnhDWHFmNnpkZUh2SksxV3pmbjFON1oyMzhaZzZGMkk2Q0wyekVDRDRveThTNVg3ZkVuMUJPbDMvSi8zRXZUNTkvVUdjTEhaU21pOEtXK084RTh6WW12VzVEd1JzenpncXZyNEhNZHYrcEM3Ym9zSyt4ZXZxZndHZDV2S09xaVl0VU5vdHBsWXZJMmhJYXF0TjdCRE1OTFZoN3c1UE8=
+    delayedInitialization: 0
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 1
+    maxSimultaneousObjectTargets: 1
+    useDelayedLoadingObjectTargets: 0
+    modelTargetRecoWhileExtendedTracked: 1
+    version: 8.5.9
+    eulaAcceptedVersions: '{"Values":["8.5"]}'
+  database:
+    disableModelExtraction: 0
+  videoBackground:
+    numDivisions: 2
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    videoBackgroundEnabled: 1
+  deviceTracker:
+    autoInitTracker: 0
+    autoStartTracker: 0
+    arcoreRequirement: 0
+    autoImportArcore: 0
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
+  webcam:
+    deviceNameSetInEditor: Logitech BRIO
+    turnOffWebCam: 0
+    renderTextureLayer: 30
