@@ -8,6 +8,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 
 using UnityEngine;
 using Vuforia;
+using UnityEngine.Video;
 
 /// <summary>
 /// A custom handler that implements the ITrackableEventHandler interface.
@@ -34,6 +35,8 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
     public GameObject light01;
     public GameObject light02;
     public GameObject light03;
+    public VideoPlayer videoPlayer;
+
     //
 
     #endregion // PROTECTED_MEMBER_VARIABLES
@@ -90,7 +93,8 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
             light01.SetActive(true);
             light02.SetActive(false);
             light03.SetActive(false);
-
+            videoPlayer.time = 0;
+            videoPlayer.Play();
             //
             OnTrackingFound();
 
@@ -102,6 +106,8 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
             Logo.Play("Idle");
             startAnim.Play("Idle");
             Flash.Play("Idle");
+            videoPlayer.time = 0;
+            videoPlayer.Stop();
             OnTrackingLost();
         }
         else
@@ -168,6 +174,6 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
 
     void Update()
         {
-        Debug.Log(aSource.time);
+        //Debug.Log(aSource.time);
     }
     }
