@@ -18,11 +18,11 @@ public class typeWriter_anim_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(videoPlayer.frame);
+        //Debug.Log(videoPlayer.frame);
         if (videoPlayer.frame == 30) 
         {
             startAnim.Play("PostIt");
-            Debug.Log("Ohh yeah");
+            //Debug.Log("Ohh yeah");
         }
 
         if (videoPlayer.frame == 57)

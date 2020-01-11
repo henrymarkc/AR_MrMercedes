@@ -7,11 +7,16 @@ public class trailerBtn_script : MonoBehaviour
 {
     public GameObject trailer_plane;
     public VideoPlayer videoPlayer;
-
+    public Texture Blank;
 
     public void OnMouseDown() {
 
         //trailer.SetActive(!trailer.activeSelf);
+        //Video cache frame fix //
+        videoPlayer.targetTexture.DiscardContents();
+        videoPlayer.targetTexture.Release();
+        Graphics.Blit(Blank, videoPlayer.targetTexture);
+        // End Fix
         trailer_plane.SetActive(true);
         videoPlayer.time = 0;
         videoPlayer.Play();
@@ -30,9 +35,9 @@ public class trailerBtn_script : MonoBehaviour
     {
         // Close video screen
         //Debug.Log("End Reached");
-        videoPlayer.time = 0;
+        //videoPlayer.time = 0;
         videoPlayer.Stop();
-        trailer_plane.SetActive(false);
+        //trailer_plane.SetActive(false);
     }
 
 }
