@@ -48,6 +48,7 @@ public class crow_script : MonoBehaviour
         if (videoPlayer.frame == 48)
         {
             //public void TurnOn();
+           
             crow1.SetActive(true);          
             crow1Anim.Play("CrowIdle");
             //crow1Anim.Play("CrowFlight");

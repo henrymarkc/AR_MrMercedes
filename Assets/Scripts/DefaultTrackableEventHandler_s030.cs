@@ -39,6 +39,7 @@ public class DefaultTrackableEventHandler_s030 : MonoBehaviour, ITrackableEventH
     //public videoPlayerController_script trailer; ////Script Ref
     public GameObject trailer_plane;
     public VideoPlayer videoPlayer;
+    public Animator Vignette;
     //
 
     #endregion // PROTECTED_MEMBER_VARIABLES
@@ -86,7 +87,8 @@ public class DefaultTrackableEventHandler_s030 : MonoBehaviour, ITrackableEventH
           newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
 
-            //henry
+            //henry
+            Vignette.Play("Vignette_transp");
             partSys.Play();
             partSys_02.Play();
             //partSys.Emit(500);
@@ -103,6 +105,7 @@ public class DefaultTrackableEventHandler_s030 : MonoBehaviour, ITrackableEventH
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
             newStatus == TrackableBehaviour.Status.NO_POSE)
         {
+            Vignette.Play("Default");
             aSource.Stop();
             partSys.Stop();
             partSys.Clear();

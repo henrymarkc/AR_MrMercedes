@@ -37,6 +37,7 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
     public GameObject light03;
     public VideoPlayer videoPlayer;
     public GameObject Crows;
+    public Animator Vignette;
     //
 
     #endregion // PROTECTED_MEMBER_VARIABLES
@@ -86,6 +87,8 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
 
             //henry
             //aSource.PlayOneShot(aClip);
+            //Vignette.speed = 1.0f;
+            Vignette.Play("Vignette_transp");
             startAnim.Play("CINEMA_4D_Main");
             Logo.Play("LogoAnim");
             Flash.Play("muzzleFlash_logo");
@@ -103,12 +106,15 @@ public class DefaultTrackableEventHandler_cover : MonoBehaviour, ITrackableEvent
             newStatus == TrackableBehaviour.Status.NO_POSE)
         {
             //aSource.Stop();
+           
             Logo.Play("Idle");
             startAnim.Play("Idle");
             Flash.Play("Idle");
             videoPlayer.time = 0;
             videoPlayer.Stop();
             Crows.GetComponent<crow_script>().CrowHide();
+            //Vignette.speed = -1.0f;
+            Vignette.Play("Default");
             OnTrackingLost();
         }
         else

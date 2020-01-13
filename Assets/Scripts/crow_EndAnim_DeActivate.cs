@@ -23,7 +23,11 @@ public class crow_EndAnim_DeActivate : MonoBehaviour
         //anim = this.gameObject.GetComponent<Animation>();
         //anim["Crow_01_flightPath"].time = 0.0f;
         //anim.Play("Crow_01_reset");
+        //gameObject.transform.position = new Vector3(-1.385f, 0.586f, 0.84f); // sets the position of the player. 
+        //gameObject.transform.rotation = new Quaternion(-90, 0, 22.799f, 0); // sets the rotation of the player. 
+        //anim.Play("Default");
         gameObject.SetActive(false);
+        
         //Debug.Log("Crow01_test");
     }
 
